@@ -10,9 +10,7 @@ module.exports = () => {
     mode: 'development',
     entry: {
       main: './src/js/index.js',
-      install: './src/js/install.js',
-      header: './src/js/header.js',
-      editor: './src/js/editor.js'
+      install: './src/js/install.js'
     },
     output: {
       filename: '[name].bundle.js',
@@ -37,7 +35,7 @@ module.exports = () => {
         inject: true,
         name: 'Text Editor',
         short_name: 'Editor',
-        description: 'Edit the text.',
+        description: 'PWA Text Editor',
         background_color: '#f5f5f5',
         theme_color: '#31a9e1',
         start_url: './',
