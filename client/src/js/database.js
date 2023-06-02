@@ -12,19 +12,20 @@ const initdb = async () =>
     },
   });
 
+//!! LOOK AT THE ASYNC => TRY METHOD
 // Add logic to a method that accepts some content and adds it to the database
-export const putDb = async (id, content) => {
+export const putDb = async (content) => {
   console.log('PUT to the database');
-  const jateDb = await openDB('jate', 1);
+  const jateDb = await initdb('jate', 1);
   const tx = jateDb.transaction('jate', 'readwrite');
   const store = tx.objectStore('jate');
-  const request = store.put({ id: id, jate: content });
+  const request = store.put({ id: 1, value: content });
   const result = await request;
   
   // Handle errors - console.error('putDb not implemented')
   result
-    ? console.log('🚀 - data retrieved from the database', result.value)
-    : console.log('⚠️ - putDb not implemented');
+    ? console.log('🚀 Data has been saved to the database.', result.value)
+    : console.log('⚠️ Could not save data.');
   return result?.value;
 };
 
@@ -32,16 +33,16 @@ export const putDb = async (id, content) => {
 // Add logic for a method that gets all the content from the database
 export const getDb = async () => {
   console.log('GET all from the database');
-  const jateDb = await openDB('jate', 1);
+  const jateDb = await initdb('jate', 1);
   const tx = jateDb.transaction('jate', 'readonly');
   const store = tx.objectStore('jate');
-  const request = store.get();
+  const request = store.get(1);
   const result = await request;
   
   // Handle errors - console.error('getDb not implemented')
   result
-    ? console.log('🚀 - data retrieved from the database', result.value)
-    : console.log('⚠️ - getDb not implemented');
+    ? console.log('🚀 Data retrieved from the database.', result.value)
+    : console.log('⚠️ Could not retrieve data.');
   return result?.value;
 };
 
