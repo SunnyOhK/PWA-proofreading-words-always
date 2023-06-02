@@ -12,7 +12,6 @@ const initdb = async () =>
     },
   });
 
-//!! LOOK AT THE ASYNC => TRY METHOD
 // Add logic to a method that accepts some content and adds it to the database
 export const putDb = async (content) => {
   console.log('PUT to the database');
