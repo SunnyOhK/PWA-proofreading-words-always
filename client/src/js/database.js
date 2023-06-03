@@ -23,9 +23,8 @@ export const putDb = async (content) => {
   
   // Handle errors - console.error('putDb not implemented')
   result
-    ? console.log('🚀 Data has been saved to the database.', content)
+    ? console.log('🚀 Data has been saved to the database.', result)
     : console.log('⚠️ Could not save data.');
-  return result;
 };
 
 
@@ -40,9 +39,8 @@ export const getDb = async () => {
   
   // Handle errors - console.error('getDb not implemented')
   result
-    ? console.log('🚀 Data retrieved from the database.', content)
+    ? console.log('🚀 Data retrieved from the database.', result)
     : console.log('⚠️ Could not retrieve data.');
-  return result;
 };
 
 initdb();
