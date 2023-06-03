@@ -41,6 +41,7 @@ export const getDb = async () => {
   result
     ? console.log('🚀 Data retrieved from the database.', result)
     : console.log('⚠️ Could not retrieve data.');
+    return result;
 };
 
 initdb();
