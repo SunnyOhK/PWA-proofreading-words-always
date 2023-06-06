@@ -13,7 +13,7 @@ const initdb = async () =>
   });
   
   // Add logic to a method that accepts some content and adds it to the database
-  export const putDb = async (content) => {
+  export const putDb = async (id, content) => {
     console.log('PUT to the database');
 
     // define jateDb; in order to specify the name and version of the database, use openDB as init() upgrades the db
