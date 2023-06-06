@@ -5,7 +5,7 @@ const header = `
  | /| | | __ | |/ /| |
  |  _/| |//||/ / ___ |
  |_|  |__/ |__/_/  |_|
-proofreading text always
+proofreading words always
 */
 `;
 
