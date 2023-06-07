@@ -13,7 +13,7 @@ const initdb = async () =>
   });
   
   // Add logic to a method that accepts some content and adds it to the database
-  export const putDb = async (id, content) => {
+  export const putDb = async (content) => {
     console.log('PUT to the database');
 
     // define jateDb; in order to specify the name and version of the database, use openDB as init() upgrades the db
@@ -24,7 +24,7 @@ const initdb = async () =>
     const store = tx.objectStore('jate');
 
     // request will then push the updates into jateDb --> each addition will have a unique identifier (id created at db.createObjectStore) and the value that will be stored
-    const request = store.put({ id: id, value: content });
+    const request = store.put({ id: 1, value: content });
     const result = await request;
     console.log('🚀 Data has been saved to the database.', result)
     };
