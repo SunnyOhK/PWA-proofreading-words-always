@@ -1,4 +1,0 @@
-"devDependencies": {
-  "@jridgewell/sourcemap-codec": "^1.4.15",
-  "workbox-background-sync": "^7.0.0"
-}
