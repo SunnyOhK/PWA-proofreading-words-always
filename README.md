@@ -40,23 +40,35 @@ If you are interested in replicating this project into your local repo, please f
     - To build the application and start the server, there are several paths you may take:
     
           /PWA-proofreading-words-always
-              npm run start:dev --> concurrently \"cd server && npm run server\" \"cd client && npm start\"
-              npm run start --> npm run build && cd server && node server.js
-              npm run server --> cd server nodemon server.js --ignore client
-              npm run build --> cd client && npm run build
-              npm run install --> cd server && npm i && cd ../client && npm i
-              npm run client --> cd client && npm run dev
+                CLI input:             What it does:
+              ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+              npm run start:dev ➟ concurrently \"cd server && npm run server\" \"cd client && npm start\"
+              npm run start ➟ npm run build && cd server && node server.js
+              npm run server ➟ cd server nodemon server.js --ignore client
+              npm run build ➟ cd client && npm run build
+              npm run install ➟ cd server && npm i && cd ../client && npm i
+              npm run client ➟ cd client && npm run dev
 
             
-    - You can then access the site from your Local Host
+    - You can then access the page from the [Local Host](http://localhost:3000/)
 
 
 ## Usage 
 
-![](./client/src/images/browser-application.png)
-![](./client/src/images/homepage-install.png)
-![](./client/src/images/offline-application.png)
-![](./client/src/images/chrome-apps.png)
+This application can be viewed from the online Heroku-hosted webpage ( [PWA: Proofreading Words Always](https://pwa-proofreading-words-always.herokuapp.com/) ) and then installed as offline application to be used when not connected to the internet.
+
+### Online | Browser View :
+![Browser View](./client/src/images/browser-application.png)
+
+### Click Here to Install Offline Application :
+![Install](./client/src/images/homepage-install.png)
+
+### Offline | Desktop View : 
+![Offline Application](./client/src/images/offline-application.png)
+
+### Desktop Icon & Chrome Apps View :
+![Desktop Icon](./client/src/images/desktop-icon.png)
+![Where to Find](./client/src/images/chrome-apps.png)
 
 
 ## Technology Stack
@@ -64,20 +76,19 @@ If you are interested in replicating this project into your local repo, please f
 |  | Tech Stack | Description |
 | ---- | --- | --- |
 | Foundation |  |  |
-| <img height="20px" src="assets/jsIcon.png"> | JavaScript | Scripting language for webpages |
-| <img height="20px" src="assets/mongoIcon.png"> | MongoDB | Cross-platform document-oriented database program |
-| <img height="20px" src="assets/nodeIcon.png"> | Node.js | Javascript Framework |
-| Testing |  |  |
-| <img height="20px" src="assets/insomniaIcon.png"> | Insomnia REST | Collaborative open source API development platform |
+| <img height="20px" src="./client/src/images/jsIcon.png"> | JavaScript | Scripting language for webpages |
+| <img height="20px" src="./client/src/images/nodeIcon.png"> | Node.js | Javascript Framework |
 | npm Packages |  |  |
-| <img height="20px" src="assets/mongooseIcon.png"> | mongoose | MongoDB object modeling for Node.js |
-| <img height="20px" src="assets/nodemon-icon.png"> | Nodemon | Utility to monitor code changes and restart server |
-| <img height="20px" src="assets/expressJsIcon.png"> | Express | Node.js module |
-| <img height="20px" src="assets/momentIcon.png"> | Moment.js | Date &time display for JavaScript |
+| <img height="20px" src="./client/src/images/expressJsIcon.png"> | Express | Node.js module |
+| <img height="20px" src="./client/src/images/babel.png"> | Babel | JavaScript compiler |
+| <img height="20px" src="./client/src/images/webpackIcon.png"> | Webpack | JavaScript module bundler |
+| <img height="20px" src="./client/src/images/nodemon-icon.png"> | Nodemon | Utility to monitor code changes and restart server |
 
+NOTE : Additional npm packages and dependencies can be found within the package.json files
 
 ## Credits
 - Alex Gonzalez: EdX Tutor
+- Starter Code was provided for this application.
 
 
 ## License
